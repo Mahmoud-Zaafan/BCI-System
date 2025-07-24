@@ -1,0 +1,71 @@
+# SSVEP Configuration File
+
+# Data settings
+data:
+  root_dir: "/kaggle/input/mtcaic3"
+  sampling_rate: 250
+  trial_length_sec: 7
+  samples_per_trial: 1750
+  
+# EEG channels
+channels:
+  all: ['FZ', 'C3', 'CZ', 'C4', 'PZ', 'PO7', 'OZ', 'PO8']
+  primary: ['OZ', 'PO7', 'PO8']  # Occipital region
+  secondary: ['PZ', 'CZ']         # Supporting channels
+  
+# SSVEP frequencies
+target_frequencies:
+  Forward: 7.0
+  Backward: 8.0
+  Left: 10.0
+  Right: 13.0
+  
+# Preprocessing
+preprocessing:
+  highpass_cutoff: 1.0
+  lowpass_cutoff: 40.0
+  notch_freqs: [50, 100]
+  filter_order: 4
+  skip_seconds: 1.0  # Skip first and last 1 second
+  
+# Model settings
+model:
+  name: "EEGNet_Enhanced"
+  dropout_rate: 0.30
+  kernel_length: 64
+  F1: 16
+  D: 2
+  F2: 32
+  use_attention: true
+  
+# Training settings
+training:
+  batch_size: 64
+  epochs: 150
+  validation_split: 0.20
+  
+  # Learning rate settings
+  lr_initial: 3.0e-4
+  lr_min: 1.0e-7
+  
+  # SGDR settings
+  sgdr_T0: 30
+  sgdr_Tmult: 2
+  
+  # Callbacks
+  early_stopping_patience: 40
+  reduce_lr_patience: 20
+  
+# Augmentation settings
+augmentation:
+  enabled: true
+  phase_shift_ms: 50
+  amplitude_scale: [0.8, 1.2]
+  frequency_mask_prob: 0.1
+  phase_erase_ratio: 0.1
+  
+# Test Time Augmentation
+tta:
+  enabled: true
+  n_augmentations: 4
+  temperature: 2.0

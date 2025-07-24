@@ -13,11 +13,13 @@ Advanced Brain-Computer Interface system achieving **77.47% accuracy** on SSVEP 
 ## 📊 Performance Visualization
 
 ### Confusion Matrix - Validation Set (TTA)
-![Confusion Matrix](results/confusion_matrix_tta.png)
+![Confusion Matrix](results/confusion_matrix.png)
 
 ### Training History
-![Training Curves](results/training_curves.png)
+![Training Curves](results/training_curves,.png)
 
+### Model Architecture
+![Model Architecture](results/Model_Architecture.png)
 ## 🚀 Key Features
 
 ### Advanced Architecture

@@ -43,8 +43,8 @@ Advanced Brain-Computer Interface system achieving **77.47% accuracy** on SSVEP 
 
 ```bash
 # Clone the repository
-git clone https://github.com/Mahmoud-Zaafan/BCI-System.git
-cd BCI-System
+git clone https://github.com/yourusername/bci-ssvep-system.git
+cd bci-ssvep-system
 
 # Install dependencies
 pip install -r requirements.txt
@@ -160,9 +160,9 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{bci_ssvep_2025,
   title={Enhanced EEGNet with Attention for SSVEP Classification},
-  author={Mahmoud Zaafan},
+  author={Your Name},
   year={2025},
-  url={https://github.com/Mahmoud-Zaafan/BCI-System}
+  url={https://github.com/yourusername/bci-ssvep-system}
 }
 ```
 

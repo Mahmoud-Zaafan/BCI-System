@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ #!/usr/bin/env python
 """
 Prediction script for SSVEP BCI system.
 

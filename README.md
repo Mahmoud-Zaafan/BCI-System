@@ -4,9 +4,9 @@ Advanced Brain-Computer Interface system achieving **80.36% accuracy** on SSVEP 
 
 ## 🏆 Competition Results
 
-- **Validation Accuracy (TTA)**: 77.47%
-- **Best Validation Accuracy**: 75.06% (during training)
-- **F1-Scores**: All classes above 0.72, with Left class reaching 0.8164
+- **Validation Accuracy (TTA)**: 79.57%
+- **Best Validation Accuracy**: 79.57% (during training)
+- **F1-Scores**: All classes above 0.76, with Left class reaching 0.8164
 - **Model Parameters**: 16,388 (highly efficient)
 - **Data Augmentation**: 5x expansion (2,450 → 12,250 samples)
 

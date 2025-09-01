@@ -1,6 +1,6 @@
 # MTC-AIC3 BCI Competition - SSVEP Classification System
 
-Advanced Brain-Computer Interface system achieving **77.47% accuracy** on SSVEP classification using Enhanced EEGNet with Multi-Head Attention.
+Advanced Brain-Computer Interface system achieving **80.36% accuracy** on SSVEP classification using Enhanced EEGNet with Multi-Head Attention.
 
 ## 🏆 Competition Results
 
